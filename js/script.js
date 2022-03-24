@@ -30,7 +30,7 @@ let decimalcosto = costoViaggio.toFixed(2);
 if (isNaN(decimalcosto)){
     document.getElementById("price").innerHTML = 'ricarica pagina'
 } else {
-    document.getElementById("price").innerHTML = (decimalcosto)
+    document.getElementById("price").innerHTML = (`il costo del tuo viaggio è di ${decimalcosto} euro`)
 }
 
 
