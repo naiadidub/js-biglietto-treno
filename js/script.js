@@ -27,4 +27,10 @@ if (età < 18){
 
 let decimalcosto = costoViaggio.toFixed(2);
 
-document.getElementById("price").innerHTML = (decimalcosto)
+if (isNaN(decimalcosto)){
+    document.getElementById("price").innerHTML = 'ricarica pagina'
+} else {
+    document.getElementById("price").innerHTML = (decimalcosto)
+}
+
+
